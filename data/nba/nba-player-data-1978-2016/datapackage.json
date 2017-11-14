@@ -1,0 +1,679 @@
+{
+  "name": "jgrosz99_nba-player-data-1978-2016",
+  "title": "NBA Player Data 1978-2016",
+  "description": "NBA Player Data Per Season From 1978-2016",
+  "homepage": "https://data.world/jgrosz99/nba-player-data-1978-2016",
+  "resources": [
+    {
+      "name": "nba_season_data",
+      "schema": {
+        "fields": [
+          {
+            "name": "year",
+            "title": "Year",
+            "type": "gyear",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#gYear"
+          },
+          {
+            "name": "tm",
+            "title": "Tm",
+            "type": "string",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#string"
+          },
+          {
+            "name": "player",
+            "title": "Player",
+            "type": "string",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#string"
+          },
+          {
+            "name": "age",
+            "title": "Age",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer"
+          },
+          {
+            "name": "g",
+            "title": "G",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer"
+          },
+          {
+            "name": "mp",
+            "title": "MP",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer"
+          },
+          {
+            "name": "per",
+            "title": "PER",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "ts",
+            "title": "TS%",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "3par",
+            "title": "3PAr",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "ftr",
+            "title": "FTr",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "orb",
+            "title": "ORB%",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "drb",
+            "title": "DRB%",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "trb",
+            "title": "TRB%",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "ast",
+            "title": "AST%",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "stl",
+            "title": "STL%",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "blk",
+            "title": "BLK%",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "tov",
+            "title": "TOV%",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "usg",
+            "title": "USG%",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "column_s",
+            "title": ".",
+            "type": "boolean",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#boolean"
+          },
+          {
+            "name": "ows",
+            "title": "OWS",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "dws",
+            "title": "DWS",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "ws",
+            "title": "WS",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "ws_48",
+            "title": "WS/48",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "column_x",
+            "title": ".",
+            "type": "boolean",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#boolean"
+          },
+          {
+            "name": "obpm",
+            "title": "OBPM",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "dbpm",
+            "title": "DBPM",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "bpm",
+            "title": "BPM",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "vorp",
+            "title": "VORP",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "ows_48",
+            "title": "OWS/48",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "dws_48",
+            "title": "DWS/48",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "shot",
+            "title": "Shot%",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "player_id",
+            "title": "Player ID",
+            "type": "string",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#string"
+          },
+          {
+            "name": "team_mar",
+            "title": "Team Mar",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "team_mp",
+            "title": "Team MP",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer"
+          },
+          {
+            "name": "team_gm",
+            "title": "Team Gm",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer"
+          },
+          {
+            "name": "year_3par",
+            "title": "Year 3PAr",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "team_ts",
+            "title": "Team TS%",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "tm_usg",
+            "title": "Tm USG",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer"
+          },
+          {
+            "name": "tm_ts_w_o_plyr",
+            "title": "Tm TS W/O Plyr",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "reb_vers",
+            "title": "Reb/Vers",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "defense",
+            "title": "Defense",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "val_shot",
+            "title": "Val/Shot",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "offense",
+            "title": "Offense",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "mpg_int",
+            "title": "MPG + Int",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "raw_spm",
+            "title": "RAW SPM",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "min",
+            "title": "%Min",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "raw_contrib",
+            "title": "RAW Contrib",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "tm_sum",
+            "title": "Tm Sum",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "tm_adj",
+            "title": "Tm Adj",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "bpm_2",
+            "title": "BPM",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "stderr",
+            "title": "StdErr",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "contrib",
+            "title": "Contrib",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "vorp_2",
+            "title": "VORP",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "reb_vers_2",
+            "title": "Reb/Vers",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "val_shot_2",
+            "title": "Val/Shot",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "offense_2",
+            "title": "Offense",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "defense_2",
+            "title": "Defense",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "mpg",
+            "title": "MPG",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "raw_obpm",
+            "title": "Raw OBPM",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "contrib_2",
+            "title": "Contrib",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "tm_ortg",
+            "title": "Tm Ortg",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "tm_sum_2",
+            "title": "Tm Sum",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "tm_adj_2",
+            "title": "Tm Adj",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "tm_drtg",
+            "title": "Tm DRtg",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "obpm_2",
+            "title": "OBPM",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "ostderr",
+            "title": "OStdErr",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "ocontrib",
+            "title": "Ocontrib",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "ovorp",
+            "title": "OVORP",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "dbpm_2",
+            "title": "DBPM",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "dstderr",
+            "title": "DStdErr",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "dcontrib",
+            "title": "Dcontrib",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "dvorp",
+            "title": "DVORP",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "sum_spm",
+            "title": "Sum SPM",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "min_2",
+            "title": "%Min",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "mpg_2",
+            "title": "MPG",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "rempg",
+            "title": "ReMPG",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "bpm_3",
+            "title": "BPM",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "contrib_3",
+            "title": "Contrib",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "vorp_3",
+            "title": "VORP",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "vorp_gm",
+            "title": "VORP-Gm",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "o_bpm",
+            "title": "O-BPM",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "ocontrib_2",
+            "title": "Ocontrib",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "ovorp_2",
+            "title": "OVORP",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "ovorp_gm",
+            "title": "OVORP-Gm",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "d_bpm",
+            "title": "D-BPM",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "dcontrib_2",
+            "title": "Dcontrib",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "dvorp_2",
+            "title": "DVORP",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "dvorp_gm",
+            "title": "DVORP-Gm",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "production",
+            "title": "Production",
+            "type": "string",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#string"
+          },
+          {
+            "name": "prod_gm",
+            "title": "Prod-Gm",
+            "type": "string",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#string"
+          },
+          {
+            "name": "exp_bpm",
+            "title": "Exp BPM",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "truetalentbpm",
+            "title": "TrueTalentBPM",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "exp_min",
+            "title": "Exp%Min",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "truetalentvorp",
+            "title": "TrueTalentVORP",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "truesalary",
+            "title": "TrueSalary",
+            "type": "string",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#string"
+          },
+          {
+            "name": "truetimevorp",
+            "title": "TrueTimeVORP",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "adjusted_production",
+            "title": "Adjusted Production",
+            "type": "string",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#string"
+          },
+          {
+            "name": "worp",
+            "title": "WORP",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "o_worp",
+            "title": "O-WORP",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "d_worp",
+            "title": "D-WORP",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "adjusted_worp",
+            "title": "Adjusted WORP",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "estimated_position",
+            "title": "Estimated Position",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "bbref_pos",
+            "title": "BBRef Pos",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "age_on_feb_1",
+            "title": "Age on Feb 1",
+            "type": "number",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#decimal"
+          },
+          {
+            "name": "yrs_experience",
+            "title": "Yrs Experience",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer"
+          },
+          {
+            "name": "height",
+            "title": "Height",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer"
+          },
+          {
+            "name": "weight",
+            "title": "Weight",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer"
+          },
+          {
+            "name": "rounded_position",
+            "title": "Rounded Position",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer"
+          },
+          {
+            "name": "rounded_age",
+            "title": "Rounded Age",
+            "type": "integer",
+            "rdfType": "http://www.w3.org/2001/XMLSchema#integer"
+          }
+        ]
+      },
+      "path": "data/nba_season_data.csv",
+      "format": "csv"
+    },
+    {
+      "name": "original/NBA Season Data.csv",
+      "path": "original/NBA Season Data.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "bytes": 9087139
+    }
+  ],
+  "keywords": ["sports", "basketball", "nba"]
+}
