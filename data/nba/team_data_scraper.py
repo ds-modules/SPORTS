@@ -1,10 +1,7 @@
+import time
 import bs4
 import requests
 import pandas as pd
-import time
-import matplotlib.pyplot as plt
-import statsmodels.api as sm
-import statsmodels.formula.api as smf
 import numpy as np
 
 
@@ -162,28 +159,5 @@ for team in TEAMS:
     time.sleep(.5)
 
 df = pd.concat(frames).sort_values('year')
-
-df.plot.scatter(x='off_rtg_rel', y='win_pct')
-df.plot.scatter(x='def_rtg_rel', y='win_pct')
-df.plot.scatter(x='net_rtg', y='win_pct')
-plt.show()
-
-df.plot.scatter(x='rtg_logratio', y='win_logratio')
-plt.show()
-
-formula = 'win_logratio ~ rtg_logratio + 0'
-
-results = smf.ols(formula, data=df).fit()
-print(results.summary())
-
-grps = df.groupby('year')
-coefs = []
-years = []
-for year, grp in grps:
-    years.append(year)
-    results = smf.ols(formula, data=grp).fit()
-    coefs.append(results.params['rtg_logratio'])
-plt.plot(years, coefs)
-plt.show()
 
 df.to_csv("team_season_data.csv")
