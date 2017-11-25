@@ -1,7 +1,7 @@
 ## Data Assets
 
 + MLB annual data from Lahman Baseball Databank.  Obtained in csv format from `http://www.seanlahman.com/baseball-archive/statistics/`.  Available in `mlb/`.
-+ MLB play-by-play from Retrosheet for 2000-2016.  Gzipped CSV event files, game files, and roster files.  Available in `mlb_pxp/`.  See `https://github.com/wellsoliver/py-retrosheet` for details on data acquisition.  
++ MLB play-by-play from Retrosheet for 2000-2016.  Gzipped CSV event files, game files, and roster files.  Available in `mlb_pxp/`.  See `https://github.com/wellsoliver/py-retrosheet` for details on data acquisition.  See the documentation for Chadwick on the data fields. `http://chadwick.sourceforge.net/doc/cwtools.html`
 + NBA Annual data from Open Source Sports through 2013.  Assorted csv files available in `nba/BasketballDB-20130121/`
 + NBA Player stats from 1978-2016 obtained from `https://data.world/jgrosz99/nba-player-data-1978-2016`.  Available in `nba/nba-player-data-1978-2016/`
 + NBA Player stats from 1950-2016 obtained from `https://www.kaggle.com/drgilermo/nba-players-stats`.  Available in `nba/nba-players-stats-since-1950/`
